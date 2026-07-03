@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cecd369b-2600-451c-a0d4-4795e3b7ad3d" name="Changes" comment="Add initial frontend setup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/HeroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/IntroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/IntroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/ReadySoapsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/ReadySoapsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/SoapConfiguratorSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/SoapConfiguratorSection.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/Gigabyte/Desktop/workspace/custom-soap-shop" value="3FxOv17fPqKaZfUgej7cqLqpCa8" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/custom-soap-shop-web" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/uzunovnikolay/custom-soap-shop.git",
+    "accountId": "8514a0ca-2999-48d3-b286-0a06dc2a9442"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3FxOv17fPqKaZfUgej7cqLqpCa8" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.custom-soap-shop: Compose Deployment.executor": "Run",
+    "Maven.custom-soap-shop [clean].executor": "Run",
+    "Maven.custom-soap-shop [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.CustomSoapShopApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore_missing_gitignore": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Gigabyte/Desktop/workspace/custom-soap-shop/custom-soap-shop-web/src/app/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\Gigabyte\\Desktop\\workspace\\custom-soap-shop\\custom-soap-shop-web\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop-web\src\app\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop-web\src" />
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop" />
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CustomSoapShopApplication">
+    <configuration name="CustomSoapShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="custom-soap-shop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mverse.customsoapshop.CustomSoapShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="custom-soap-shop: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="custom-soap-shop/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.custom-soap-shop: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.26775.15" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.26775.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cecd369b-2600-451c-a0d4-4795e3b7ad3d" name="Changes" comment="" />
+      <created>1783013482093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783013482093</updated>
+      <workItem from="1783013483133" duration="7350000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add initial frontend setup">
+      <option name="closed" value="true" />
+      <created>1783093502183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783093502183</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add initial frontend setup">
+      <option name="closed" value="true" />
+      <created>1783093709869</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783093709869</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add initial frontend setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial frontend setup" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
