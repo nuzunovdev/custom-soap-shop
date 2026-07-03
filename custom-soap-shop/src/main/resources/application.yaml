@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: custom-soap-shop
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/custom_soap_shop
+    username: "master_user"
+    password: "FuckingEnergy23@#"
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
