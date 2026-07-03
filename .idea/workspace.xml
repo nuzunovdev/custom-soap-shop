@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cecd369b-2600-451c-a0d4-4795e3b7ad3d" name="Changes" comment="Add initial frontend setup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/HeroSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/IntroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/IntroSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/ReadySoapsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/ReadySoapsSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/SoapConfiguratorSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/SoapConfiguratorSection.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="cecd369b-2600-451c-a0d4-4795e3b7ad3d" name="Changes" comment="Add initial frontend setup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,9 +23,16 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/custom-soap-shop-web" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "uzunovnikolay"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/uzunovnikolay/custom-soap-shop.git",
@@ -127,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783013482093</updated>
-      <workItem from="1783013483133" duration="7350000" />
+      <workItem from="1783013483133" duration="7725000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial frontend setup">
       <option name="closed" value="true" />
@@ -145,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783093709869</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add initial frontend setup">
+      <option name="closed" value="true" />
+      <created>1783094524550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783094524550</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add initial frontend setup">
+      <option name="closed" value="true" />
+      <created>1783094655689</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783094655689</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
