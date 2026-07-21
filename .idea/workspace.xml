@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cecd369b-2600-451c-a0d4-4795e3b7ad3d" name="Changes" comment="Add initial frontend setup" />
+    <list default="true" id="cecd369b-2600-451c-a0d4-4795e3b7ad3d" name="Changes" comment="Add initial frontend setup">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/ReadySoapsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/ReadySoapsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/SoapConfiguratorSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/SoapConfiguratorSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -27,25 +38,25 @@
     <option name="RESET_MODE" value="SOFT" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "uzunovnikolay"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;uzunovnikolay&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/uzunovnikolay/custom-soap-shop.git",
-    "accountId": "8514a0ca-2999-48d3-b286-0a06dc2a9442"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/uzunovnikolay/custom-soap-shop.git&quot;,
+    &quot;accountId&quot;: &quot;8514a0ca-2999-48d3-b286-0a06dc2a9442&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3FxOv17fPqKaZfUgej7cqLqpCa8" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -60,12 +71,13 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.CustomSoapShopApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Gigabyte/Desktop/workspace/custom-soap-shop/custom-soap-shop-web/src/app/components",
+    "last_opened_file_path": "C:/Users/Gigabyte/Desktop/workspace/custom-soap-shop/custom-soap-shop/src/main/java/com/mverse/customsoapshop/dto",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +90,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop\src\main\java\com\mverse\customsoapshop\dto" />
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop\src\main\java\com\mverse\customsoapshop\service" />
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop\src\main\java\com\mverse\customsoapshop\repository" />
       <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop-web\src\app\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -125,7 +140,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783013482093</updated>
-      <workItem from="1783013483133" duration="7725000" />
+      <workItem from="1783013483133" duration="12056000" />
+      <workItem from="1784103393782" duration="603000" />
+      <workItem from="1784559295670" duration="3441000" />
+      <workItem from="1784634644714" duration="9134000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial frontend setup">
       <option name="closed" value="true" />
@@ -159,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783094655689</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add initial frontend setup">
+      <option name="closed" value="true" />
+      <created>1783094926470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783094926470</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +205,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add initial frontend setup" />
     <option name="LAST_COMMIT_MESSAGE" value="Add initial frontend setup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/service/soap/SoapServiceImpl.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
