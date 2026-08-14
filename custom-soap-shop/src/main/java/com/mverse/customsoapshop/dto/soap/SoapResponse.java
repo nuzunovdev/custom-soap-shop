@@ -2,7 +2,6 @@ package com.mverse.customsoapshop.dto.soap;
 
 import com.mverse.customsoapshop.dto.soapfragrances.SoapFragranceResponse;
 import com.mverse.customsoapshop.dto.soapvariation.SoapVariationResponse;
-import com.mverse.customsoapshop.entity.soapvariation.SoapVariation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,4 +22,5 @@ public class SoapResponse {
     private String initials;
     private boolean custom;
     private BigDecimal price;
+    private String imageUrl;
 }

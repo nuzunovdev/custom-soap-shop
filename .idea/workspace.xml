@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cecd369b-2600-451c-a0d4-4795e3b7ad3d" name="Changes" comment="Add initial frontend setup">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="cecd369b-2600-451c-a0d4-4795e3b7ad3d" name="Changes" comment="Beautiful visualisation.&#10;Creating orders">
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/controller/order/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/dto/order/CreateOrderItemRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/dto/order/CreateOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/dto/order/OrderItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/dto/order/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/entity/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/entity/order/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/repository/order/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/service/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/custom-soap-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/custom-soap-shop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/ReadySoapsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/ReadySoapsSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop-web/src/components/SoapConfiguratorSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop-web/src/components/SoapConfiguratorSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom-soap-shop/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/dto/soap/SoapResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/dto/soap/SoapResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/entity/soap/Soap.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/entity/soap/Soap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/service/soap/SoapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/service/soap/SoapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/service/soap/SoapServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/service/soap/SoapServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +37,7 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -77,12 +86,15 @@
     "git-widget-placeholder": "master",
     "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Gigabyte/Desktop/workspace/custom-soap-shop/custom-soap-shop/src/main/java/com/mverse/customsoapshop/dto",
+    "last_opened_file_path": "C:/Users/Gigabyte/Desktop/workspace/custom-soap-shop/custom-soap-shop-web/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\Gigabyte\\Desktop\\workspace\\custom-soap-shop\\custom-soap-shop-web\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -90,15 +102,20 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop-web\src\components" />
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop-web\src\lib" />
       <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop\src\main\java\com\mverse\customsoapshop\dto" />
       <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop\src\main\java\com\mverse\customsoapshop\service" />
       <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop\src\main\java\com\mverse\customsoapshop\repository" />
-      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop-web\src\app\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop-web\public\videos" />
       <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop-web\src" />
       <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop" />
       <recent name="C:\Users\Gigabyte\Desktop\workspace\custom-soap-shop\custom-soap-shop" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mverse.customsoapshop.entity.order" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CustomSoapShopApplication">
@@ -143,7 +160,9 @@
       <workItem from="1783013483133" duration="12056000" />
       <workItem from="1784103393782" duration="603000" />
       <workItem from="1784559295670" duration="3441000" />
-      <workItem from="1784634644714" duration="9134000" />
+      <workItem from="1784634644714" duration="11525000" />
+      <workItem from="1784818549460" duration="12856000" />
+      <workItem from="1786713599939" duration="4431000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial frontend setup">
       <option name="closed" value="true" />
@@ -185,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783094926470</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add main layers and apis.">
+      <option name="closed" value="true" />
+      <created>1784645748948</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1784645748948</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add main layers and apis.">
+      <option name="closed" value="true" />
+      <created>1784645808895</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1784645808895</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,14 +239,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add initial frontend setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial frontend setup" />
+    <MESSAGE value="Add main layers and apis." />
+    <MESSAGE value="Beautiful visualisation.&#10;Creating orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beautiful visualisation.&#10;Creating orders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/custom-soap-shop/src/main/java/com/mverse/customsoapshop/service/soap/SoapServiceImpl.java</url>
-          <line>19</line>
+          <line>31</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
