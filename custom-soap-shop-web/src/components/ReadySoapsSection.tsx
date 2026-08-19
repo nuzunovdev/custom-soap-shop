@@ -83,12 +83,25 @@ export function ReadySoapsSection({ readySoaps }: ReadySoapsSectionProps) {
       ) : (
         <div className="relative">
           <button
-            type="button"
-            onClick={scrollLeft}
-            aria-label="Scroll left"
-            className="absolute left-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#D6C3AA] bg-[#FFFDF8]/95 text-3xl font-semibold text-[#5B3A29] shadow-lg transition hover:scale-105 hover:bg-[#F1E4D2]"
+              type="button"
+              onClick={scrollLeft}
+              aria-label="Scroll left"
+              className="absolute left-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#D6C3AA] bg-[#FFFDF8]/95 text-[#5B3A29] shadow-lg transition hover:scale-105 hover:bg-[#F1E4D2]"
           >
-            ‹
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                className="h-5 w-5"
+            >
+              <path
+                  d="M15 18 9 12l6-6"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+              />
+            </svg>
           </button>
 
           <div
@@ -143,12 +156,25 @@ export function ReadySoapsSection({ readySoaps }: ReadySoapsSectionProps) {
           </div>
 
           <button
-            type="button"
-            onClick={scrollRight}
-            aria-label="Scroll right"
-            className="absolute right-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#D6C3AA] bg-[#FFFDF8]/95 text-3xl font-semibold text-[#5B3A29] shadow-lg transition hover:scale-105 hover:bg-[#F1E4D2]"
+              type="button"
+              onClick={scrollRight}
+              aria-label="Scroll right"
+              className="absolute right-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-[#D6C3AA] bg-[#FFFDF8]/95 text-[#5B3A29] shadow-lg transition hover:scale-105 hover:bg-[#F1E4D2]"
           >
-            ›
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                className="h-5 w-5"
+            >
+              <path
+                  d="m9 18 6-6-6-6"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+              />
+            </svg>
           </button>
         </div>
       )}
