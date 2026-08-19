@@ -120,7 +120,15 @@ export function SoapConfiguratorSection({
           Choose one soap type, combine up to two aromas, and add initials.
         </p>
 
-        <div className="mt-8 grid gap-6 rounded-3xl border border-[#E7D8C4] bg-[#FAF4EA] p-6 md:grid-cols-3">
+        <div
+            className={`mt-8 grid gap-6 rounded-3xl border border-[#E7D8C4] bg-[#FAF4EA] p-6 transition-all duration-1000 ease-in-out ${
+                selectedFragranceIds.length > 0
+                    ? "md:grid-cols-3"
+                    : selectedSoapVariation
+                        ? "md:grid-cols-2"
+                        : "md:grid-cols-1"
+            }`}
+        >
           <div>
             <label className="text-sm font-semibold">Soap type</label>
 
@@ -141,12 +149,19 @@ export function SoapConfiguratorSection({
             </select>
           </div>
 
-          <div>
+          <div
+              className={`overflow-hidden transition-all duration-1500 ease-out ${
+                  selectedSoapVariation
+                      ? "max-h-[600px] translate-y-0 opacity-100"
+                      : "pointer-events-none max-h-0 -translate-y-4 opacity-0"
+              }`}
+              aria-hidden={!selectedSoapVariation}
+          >
             <label className="text-sm font-semibold">
               Aromas{" "}
               <span className="font-normal text-[#7A6655]">
-                ({selectedFragranceIds.length}/2)
-              </span>
+      ({selectedFragranceIds.length}/2)
+    </span>
             </label>
 
             <div className="mt-2 grid grid-cols-2 gap-2">
@@ -177,8 +192,14 @@ export function SoapConfiguratorSection({
             </div>
           </div>
 
-          <div>
-            <label className="text-sm font-semibold">Initials</label>
+          <div
+              className={`overflow-hidden transition-all duration-1500 ease-out ${
+                  selectedFragranceIds.length > 0
+                      ? "max-h-[700px] translate-y-0 opacity-100 delay-100"
+                      : "pointer-events-none max-h-0 -translate-y-4 opacity-0 delay-0"
+              }`}
+              aria-hidden={selectedFragranceIds.length === 0}
+          >
 
             <input
               type="text"
