@@ -6,7 +6,7 @@ import { addCartItem } from "@/lib/cart";
 import type { SoapFragrance, SoapVariation } from "@/types/catalog";
 
 const CUSTOM_SOAP_PRICE = 16.99;
-const CUSTOM_SOAP_IMAGE_URL = "/images/soaps/custom-soap.jpg";
+const CUSTOM_SOAP_IMAGE_URL = "/images/soaps/custom.jpg";
 
 type SoapConfiguratorSectionProps = {
   soapVariations: SoapVariation[];
