@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import type { Soap } from "@/types/catalog";
 
@@ -9,7 +9,34 @@ type ReadySoapsSectionProps = {
 };
 
 export function ReadySoapsSection({ readySoaps }: ReadySoapsSectionProps) {
+  const sectionRef = useRef<HTMLElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const [isSectionVisible, setIsSectionVisible] = useState(false);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+
+    if (!section) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsSectionVisible(entry.isIntersecting);
+        },
+        {
+          threshold: 0.3,
+        },
+    );
+
+    observer.observe(section);
+
+    return () => {
+      observer.unobserve(section);
+      observer.disconnect();
+    };
+  }, []);
 
   function scrollLeft() {
     scrollContainerRef.current?.scrollBy({
@@ -26,7 +53,15 @@ export function ReadySoapsSection({ readySoaps }: ReadySoapsSectionProps) {
   }
 
   return (
-    <section id="ready-soaps" className="mx-auto max-w-6xl px-6 py-16">
+      <section
+          ref={sectionRef}
+          id="ready-soaps"
+          className={`mx-auto max-w-6xl px-6 py-16 transition-all duration-[1200ms] ease-out ${
+              isSectionVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-12 opacity-0"
+          }`}
+      >
       <div className="mb-8">
         <p className="text-sm font-semibold uppercase tracking-widest text-[#7A6655]">
           Ready to order
