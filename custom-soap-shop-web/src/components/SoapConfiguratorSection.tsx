@@ -196,11 +196,7 @@ export function SoapConfiguratorSection({
               }`}
           >
             {/* Soap type */}
-            <div
-                className={`transition-all duration-1000 ease-in-out ${
-                    hasSelectedSoapType ? "" : "md:max-w-sm"
-                }`}
-            >
+            <div className="w-full transition-all duration-1000 ease-in-out">
               <label className="text-sm font-semibold">Soap type</label>
 
               <select
