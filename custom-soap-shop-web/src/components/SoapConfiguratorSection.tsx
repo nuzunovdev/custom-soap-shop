@@ -49,19 +49,19 @@ export function SoapConfiguratorSection({
 
     const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsSectionVisible(true);
-            observer.disconnect();
-          }
+          setIsSectionVisible(entry.isIntersecting);
         },
         {
-          threshold: 0.2,
+          threshold: 0.75,
         },
     );
 
     observer.observe(section);
 
-    return () => observer.disconnect();
+    return () => {
+      observer.unobserve(section);
+      observer.disconnect();
+    };
   }, []);
 
   useEffect(() => {
