@@ -16,6 +16,7 @@ export type CreateOrderRequest = {
   customerName: string;
   customerEmail: string;
   customerPhone: string;
+  customerAddress: string;
   items: CreateOrderItemRequest[];
 };
 
