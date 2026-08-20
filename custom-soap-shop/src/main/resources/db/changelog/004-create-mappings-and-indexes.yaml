@@ -1,0 +1,52 @@
+databaseChangeLog:
+  - changeSet:
+      id: 006-create-soap-fragrance-mappings
+      author: custom-soap-shop
+      changes:
+        - createTable:
+            tableName: soap_fragrance_mappings
+            columns:
+              - column:
+                  name: soap_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: soap_fragrance_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+        - addPrimaryKey:
+            tableName: soap_fragrance_mappings
+            columnNames: soap_id, soap_fragrance_id
+            constraintName: soap_fragrance_mappings_pkey
+
+        - addForeignKeyConstraint:
+            baseTableName: soap_fragrance_mappings
+            baseColumnNames: soap_fragrance_id
+            constraintName: fk_soap_fragrance_mappings_fragrance
+            referencedTableName: soap_fragrances
+            referencedColumnNames: id
+            onDelete: RESTRICT
+            onUpdate: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableName: soap_fragrance_mappings
+            baseColumnNames: soap_id
+            constraintName: fk_soap_fragrance_mappings_soap
+            referencedTableName: soaps
+            referencedColumnNames: id
+            onDelete: CASCADE
+            onUpdate: CASCADE
+
+  - changeSet:
+      id: 007-create-ready-soap-name-index
+      author: custom-soap-shop
+      changes:
+        - sql:
+            sql: >
+              CREATE UNIQUE INDEX soaps_ready_name_unique_idx
+              ON soaps (name)
+              WHERE is_custom = false;

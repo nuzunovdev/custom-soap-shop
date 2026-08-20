@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/001-create-reference-tables.yaml
+
+  - include:
+      file: db/changelog/002-create-soaps.yaml
+
+  - include:
+      file: db/changelog/003-create-orders.yaml
+
+  - include:
+      file: db/changelog/004-create-mappings-and-indexes.yaml
+
+  - include:
+      file: db/changelog/005-seed-reference-data.yaml
+
+  - include:
+      file: db/changelog/006-seed-ready-soaps.yaml

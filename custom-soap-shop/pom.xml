@@ -76,10 +76,8 @@
 		</dependency>
 		<!-- Source: https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
 		<dependency>
-			<groupId>org.liquibase</groupId>
-			<artifactId>liquibase-core</artifactId>
-			<version>5.0.3</version>
-			<scope>compile</scope>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-liquibase</artifactId>
 		</dependency>
 		<!-- Source: https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
 		<dependency>

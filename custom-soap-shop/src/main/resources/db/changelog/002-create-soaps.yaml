@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-create-soaps
+      author: custom-soap-shop
+      changes:
+        - createTable:
+            tableName: soaps
+            columns:
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: description
+                  type: VARCHAR(255)
+
+              - column:
+                  name: soap_variation_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: is_custom
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: price
+                  type: NUMERIC(10,2)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: active
+                  type: BOOLEAN
+                  defaultValueBoolean: true
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: created_at
+                  type: TIMESTAMPTZ
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: updated_at
+                  type: TIMESTAMPTZ
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: initials
+                  type: VARCHAR(5)
+
+              - column:
+                  name: image_url
+                  type: VARCHAR(255)
+
+        - addForeignKeyConstraint:
+            baseTableName: soaps
+            baseColumnNames: soap_variation_id
+            constraintName: fk_soaps_soap_variation
+            referencedTableName: soap_variations
+            referencedColumnNames: id
+            onDelete: RESTRICT
+            onUpdate: CASCADE

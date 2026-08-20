@@ -1,0 +1,282 @@
+databaseChangeLog:
+  - changeSet:
+      id: 008-seed-soap-fragrances
+      author: custom-soap-shop
+      changes:
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: ROSE
+              - column:
+                  name: name
+                  value: Rose
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: CARAMEL
+              - column:
+                  name: name
+                  value: Caramel
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: VANILLA
+              - column:
+                  name: name
+                  value: Vanilla
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: LAVENDER
+              - column:
+                  name: name
+                  value: Lavender
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: LIME
+              - column:
+                  name: name
+                  value: Lime
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: MINT
+              - column:
+                  name: name
+                  value: Mint
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: HONEY
+              - column:
+                  name: name
+                  value: Honey
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: COCONUT
+              - column:
+                  name: name
+                  value: Coconut
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: ORANGE
+              - column:
+                  name: name
+                  value: Orange
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_fragrances
+            columns:
+              - column:
+                  name: code
+                  value: EUCALYPTUS
+              - column:
+                  name: name
+                  value: Eucalyptus
+              - column:
+                  name: active
+                  valueBoolean: true
+
+  - changeSet:
+      id: 009-seed-soap-variations
+      author: custom-soap-shop
+      changes:
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: HYDRATING
+              - column:
+                  name: name
+                  value: Hydrating
+              - column:
+                  name: description
+                  value: Soft and moisturizing soap.
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: DEEP_CLEANSING
+              - column:
+                  name: name
+                  value: Deep Cleansing
+              - column:
+                  name: description
+                  value: Stronger cleansing soap.
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: GENTLE
+              - column:
+                  name: name
+                  value: Gentle
+              - column:
+                  name: description
+                  value: Mild soap for gentle skin feel.
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: CREAMY
+              - column:
+                  name: name
+                  value: Creamy
+              - column:
+                  name: description
+                  value: Rich and creamy soap.
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: FOAMY
+              - column:
+                  name: name
+                  value: Foamy
+              - column:
+                  name: description
+                  value: Soap with rich foam.
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: EXFOLIATING
+              - column:
+                  name: name
+                  value: Exfoliating
+              - column:
+                  name: description
+                  value: Soap with light scrubbing effect.
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: LONG_LASTING
+              - column:
+                  name: name
+                  value: Long Lasting
+              - column:
+                  name: description
+                  value: Harder soap bar designed to last longer.
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: FRESH
+              - column:
+                  name: name
+                  value: Fresh
+              - column:
+                  name: description
+                  value: Fresh and energizing soap.
+              - column:
+                  name: active
+                  valueBoolean: true
+
+        - insert:
+            tableName: soap_variations
+            columns:
+              - column:
+                  name: code
+                  value: RELAXING
+              - column:
+                  name: name
+                  value: Relaxing
+              - column:
+                  name: description
+                  value: Calming soap with relaxing aroma.
+              - column:
+                  name: active
+                  valueBoolean: true

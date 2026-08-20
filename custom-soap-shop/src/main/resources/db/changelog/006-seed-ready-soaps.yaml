@@ -1,0 +1,86 @@
+databaseChangeLog:
+  - changeSet:
+      id: 010-seed-ready-soaps
+      author: custom-soap-shop
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO soaps (
+                  name,
+                  description,
+                  soap_variation_id,
+                  is_custom,
+                  price,
+                  active,
+                  image_url
+              )
+              VALUES
+              (
+                  'Rose Cream',
+                  'Hydrating handmade soap with soft rose and vanilla notes.',
+                  (SELECT id FROM soap_variations WHERE code = 'HYDRATING'),
+                  false,
+                  14.99,
+                  true,
+                  '/images/soaps/rose-cream.jpg'
+              ),
+              (
+                  'Mint Fresh',
+                  'Fresh and foamy soap with mint and lime aroma.',
+                  (SELECT id FROM soap_variations WHERE code = 'FRESH'),
+                  false,
+                  13.99,
+                  true,
+                  '/images/soaps/mint-fresh.jpg'
+              ),
+              (
+                  'Lavender Gentle',
+                  'Gentle relaxing soap with lavender and creamy texture.',
+                  (SELECT id FROM soap_variations WHERE code = 'GENTLE'),
+                  false,
+                  14.49,
+                  true,
+                  '/images/soaps/lavender.jpg'
+              ),
+              (
+                  'Coconut Honey',
+                  'Creamy handmade soap with coconut and honey aroma.',
+                  (SELECT id FROM soap_variations WHERE code = 'CREAMY'),
+                  false,
+                  15.49,
+                  true,
+                  '/images/soaps/coconut-honey.jpg'
+              );
+
+  - changeSet:
+      id: 011-seed-ready-soap-fragrances
+      author: custom-soap-shop
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO soap_fragrance_mappings (
+                  soap_id,
+                  soap_fragrance_id
+              )
+              SELECT
+                  s.id,
+                  f.id
+              FROM (
+                  VALUES
+                      ('Rose Cream', 'ROSE'),
+                      ('Rose Cream', 'VANILLA'),
+
+                      ('Mint Fresh', 'MINT'),
+                      ('Mint Fresh', 'LIME'),
+
+                      ('Lavender Gentle', 'LAVENDER'),
+                      ('Lavender Gentle', 'VANILLA'),
+
+                      ('Coconut Honey', 'COCONUT'),
+                      ('Coconut Honey', 'HONEY')
+              ) AS mapping(soap_name, fragrance_code)
+              JOIN soaps s
+                  ON s.name = mapping.soap_name
+                  AND s.is_custom = false
+              JOIN soap_fragrances f
+                  ON f.code = mapping.fragrance_code;
