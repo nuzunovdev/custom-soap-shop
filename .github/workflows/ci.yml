@@ -109,7 +109,7 @@ jobs:
               "sudo systemctl stop custom-soap-shop",
               "sudo mv /home/ec2-user/custom-soap-shop.jar.new /home/ec2-user/custom-soap-shop.jar",
               "sudo systemctl start custom-soap-shop",
-              "sudo systemctl is-active custom-soap-shop"
+              "for i in {1..12}; do curl --fail --silent http://127.0.0.1:8080/actuator/health && exit 0; sleep 5; done; exit 1"
             ]' \
             --query "Command.CommandId" \
             --output text)

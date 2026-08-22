@@ -1,7 +1,7 @@
 app:
   cors:
-    allowed-origin: ${FRONTEND_URL:http://localhost:3000}
-    
+    allowed-origins: ${FRONTEND_URLS:http://localhost:3000,http://127.0.0.1:3000}
+
 spring:
   application:
     name: custom-soap-shop
@@ -24,3 +24,13 @@ spring:
       hibernate:
         jdbc:
           time_zone: UTC
+          
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+  endpoint:
+    health:
+      show-details: never
