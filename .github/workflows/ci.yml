@@ -105,11 +105,13 @@ jobs:
             --instance-ids "i-0a5ba2abc38841fa2" \
             --document-name "AWS-RunShellScript" \
             --parameters 'commands=[
+              "set -e",
               "aws s3 cp s3://custom-soap-shop-deploy-uzunov/backend/custom-soap-shop.jar /home/ec2-user/custom-soap-shop.jar.new",
+              "if [ -f /home/ec2-user/custom-soap-shop.jar ]; then cp /home/ec2-user/custom-soap-shop.jar /home/ec2-user/custom-soap-shop.jar.backup; fi",
               "sudo systemctl stop custom-soap-shop",
               "sudo mv /home/ec2-user/custom-soap-shop.jar.new /home/ec2-user/custom-soap-shop.jar",
               "sudo systemctl start custom-soap-shop",
-              "for i in {1..12}; do curl --fail --silent http://127.0.0.1:8080/actuator/health && exit 0; sleep 5; done; exit 1"
+              "if for i in {1..12}; do curl --fail --silent http://127.0.0.1:8080/actuator/health > /dev/null && exit 0; sleep 5; done; then exit 0; else echo \"Health check failed. Rolling back...\"; sudo systemctl stop custom-soap-shop; if [ -f /home/ec2-user/custom-soap-shop.jar.backup ]; then sudo cp /home/ec2-user/custom-soap-shop.jar.backup /home/ec2-user/custom-soap-shop.jar; sudo systemctl start custom-soap-shop; for i in {1..12}; do curl --fail --silent http://127.0.0.1:8080/actuator/health > /dev/null && break; sleep 5; done; fi; exit 1; fi"
             ]' \
             --query "Command.CommandId" \
             --output text)
